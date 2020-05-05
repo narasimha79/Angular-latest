@@ -1,0 +1,55 @@
+<!-- BEGIN MAIN CONTENT -->
+
+		
+  <div class="row">
+    <h2 class="col-md-8 col-md-offset-2">Star Wars Galaxy of Heroes</h2>
+    <p class="col-md-6 col-md-offset-3 text-center">Star Wars: Galaxy of Heroes - The Road Ahead <a >send</a> a message.</p>
+  </div>
+
+  <app-herosearch></app-herosearch>
+
+  <!-- BEGIN WORKS -->
+  <div class="works">
+    <div class="row">
+      <!-- Item 1 -->
+
+    
+
+<div infiniteScroll
+[infiniteScrollDistance]="0.5"
+(scrolled)="onScroll($event)"> 
+<div class="col-lg-4 col-sm-6 col-xs-12" *ngFor="let people of peoples">
+  <a routerLink="/heroes/{{people.id}}">
+  <div class="work-item" >
+    <img [src]="people.image" alt="" />
+    <h4 class="namep">{{people.name}}</h4>
+    <div class="item-info">
+      <div>
+        <h4>{{people.name}}</h4>
+        <p>Donec at nulla quam. Duis, libero a vehic ula pulvinar, est enim laoreet lectus libero a vehicula.</p>
+        
+      </div>
+    </div>
+  </div>
+</a>
+  <!-- Modal -->
+ 
+</div>
+</div>
+
+
+     
+      
+    </div>
+    <p>Loading...</p>	
+
+   
+
+
+    
+
+    
+
+ 
+
+

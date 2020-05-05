@@ -1,0 +1,32 @@
+<div id="search-component">
+  <div class="row">
+
+  <div class="col-md-12">
+    
+    
+    <div class="form-group col-md-12">
+      
+      <div class="col-md-4">
+        <h4><label for="search-box">Hero Search</label></h4>
+        <input #searchBox id="search-box" class="form-control" (input)="search(searchBox.value)"  style="border: 1px solid rgb(195, 199, 201);"
+        placeholder="Search heroes here"/>
+
+      </div>
+</div>
+    
+
+<div class="col-lg-3 col-sm-6 col-xs-12">
+    <ul class="search-result plan">
+     <li *ngFor="let people of peoples | async" class="plan-price">
+    <a routerLink="/heroes/{{people.id}}"> {{ people.name }}</a>
+
+  </li>
+    </ul>
+    </div>
+  </div>
+    
+    </div>
+  </div>
+  
+  
+  
